@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/fieng/OneDrive/PersonalProjects/AlzheimerPrediction/mlruns/546483202453067211/62646a9541ed4a449cac034b3aea4d4d/artifacts
+end_time: 1741392118832
+entry_point_name: ''
+experiment_id: '546483202453067211'
+lifecycle_stage: active
+run_id: 62646a9541ed4a449cac034b3aea4d4d
+run_name: righteous-mule-398
+run_uuid: 62646a9541ed4a449cac034b3aea4d4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741392114385
+status: 4
+tags: []
+user_id: jfiengo

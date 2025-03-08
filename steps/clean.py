@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
 from sklearn.compose import ColumnTransformer
@@ -9,16 +10,13 @@ class Cleaner:
         
         
     def clean_data(self, data):
-        # Identify column types
-        categorical_cols = data.select_dtypes(include=['object']).columns.tolist()
-        categorical_cols.remove("Alzheimer’s Diagnosis")  # Remove target from features
 
         # Define column groups
         numerical_cols = ['Age', 'Education Level', 'BMI', 'Cognitive Test Score']
 
         binary_cols = ['Gender', 'Diabetes', 'Hypertension', 'Cholesterol Level', 
                     'Family History of Alzheimer’s', 'Genetic Risk Factor (APOE-ε4 allele)', 
-                    'Urban vs Rural Living']
+                    'Urban vs Rural Living', 'Alzheimer’s Diagnosis']
 
         nominal_cols = ['Country', 'Smoking Status', 'Alcohol Consumption', 
                         'Employment Status', 'Marital Status']
@@ -55,8 +53,16 @@ class Cleaner:
             ],
             remainder='drop'  # Drop any columns not specified
         )
+
         # Use preprocessing pipeline
-        features = data.drop('Alzheimer’s Diagnosis', axis=1)
-        features_transformed = preprocessor.fit_transform(X)
+        raw_data = preprocessor.fit_transform(data)
+
+        # Create DataFrame with transformed data and proper column names
+        feature_names = preprocessor.get_feature_names_out()
+        clean_data = pd.DataFrame(raw_data, columns=feature_names)
+
+        # Changing target datatype to int
+        if 'bin__Alzheimer’s Diagnosis' in clean_data.columns:
+            clean_data['bin__Alzheimer’s Diagnosis'] = clean_data['bin__Alzheimer’s Diagnosis'].astype(int)
         
-        return features_transformed
+        return clean_data

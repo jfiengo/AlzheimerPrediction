@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/fieng/OneDrive/PersonalProjects/AlzheimerPrediction/mlruns/546483202453067211/c6acd258abc3459bbaedec7d9cbdc5e9/artifacts
+end_time: 1741321660527
+entry_point_name: ''
+experiment_id: '546483202453067211'
+lifecycle_stage: active
+run_id: c6acd258abc3459bbaedec7d9cbdc5e9
+run_name: salty-smelt-444
+run_uuid: c6acd258abc3459bbaedec7d9cbdc5e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741321659159
+status: 4
+tags: []
+user_id: jfiengo

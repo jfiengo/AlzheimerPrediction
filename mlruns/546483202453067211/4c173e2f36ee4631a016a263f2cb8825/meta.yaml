@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/fieng/OneDrive/PersonalProjects/AlzheimerPrediction/mlruns/546483202453067211/4c173e2f36ee4631a016a263f2cb8825/artifacts
+end_time: 1741392513733
+entry_point_name: ''
+experiment_id: '546483202453067211'
+lifecycle_stage: active
+run_id: 4c173e2f36ee4631a016a263f2cb8825
+run_name: thoughtful-roo-432
+run_uuid: 4c173e2f36ee4631a016a263f2cb8825
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741392454411
+status: 3
+tags: []
+user_id: jfiengo

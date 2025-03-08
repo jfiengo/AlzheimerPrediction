@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/fieng/OneDrive/PersonalProjects/AlzheimerPrediction/mlruns/546483202453067211/30285fe1e96640b5976841f62334b534/artifacts
+end_time: 1741303774621
+entry_point_name: ''
+experiment_id: '546483202453067211'
+lifecycle_stage: active
+run_id: 30285fe1e96640b5976841f62334b534
+run_name: enthused-bird-357
+run_uuid: 30285fe1e96640b5976841f62334b534
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741303773175
+status: 4
+tags: []
+user_id: jfiengo

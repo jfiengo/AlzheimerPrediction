@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/fieng/OneDrive/PersonalProjects/AlzheimerPrediction/mlruns/546483202453067211/25eb2d92f81245f4a10e20bb8065b756/artifacts
+end_time: 1741392002746
+entry_point_name: ''
+experiment_id: '546483202453067211'
+lifecycle_stage: active
+run_id: 25eb2d92f81245f4a10e20bb8065b756
+run_name: merciful-smelt-36
+run_uuid: 25eb2d92f81245f4a10e20bb8065b756
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741391998298
+status: 4
+tags: []
+user_id: jfiengo
