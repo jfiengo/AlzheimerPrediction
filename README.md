@@ -41,3 +41,13 @@ Within your virtual environment, run the following command to expose the API on 
 ```
 python -m app
 ```
+
+6) Exposing API via Docker
+
+*This step is OPTIONAL*
+Before proceeding, ensure you have Docker desktop running on your machine.
+To build and run a Docker container for this application, run the following commands from the root directory of this project:
+```
+docker build -t alzheimer-prediction .
+docker run -p 5000:5000 alzheimer-prediction
+```
