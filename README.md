@@ -52,3 +52,11 @@ To build and run a Docker container for this application, run the following comm
 docker build -t alzheimer-prediction .
 docker run -p 5000:5000 alzheimer-prediction
 ```
+
+### Acknowledgments:
+
+This project uses the following dataset:
+
+Ankit. (2025). Alzheimer’s Prediction Dataset (Global) [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/10618775
+
+This project builds upon code from [mlops-project](https://github.com/prsdm/mlops-project) by [prsdm](https://github.com/prsdm), licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
